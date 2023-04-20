@@ -17,8 +17,7 @@ const NavBar = () => {
         <CustomLink href="/" title="Home" className='mr-4'/>
         <CustomLink href="/about" title="About me"/>
         <CustomLink href="/contact" title ="Contact"/>
-      </nav>
-     
+      </nav>     
       <nav>
         <Link href="/" target={"_blank"}>L</Link>
         <Link href="/" target={"_blank"}>T</Link>
