@@ -24,7 +24,6 @@ const NavBar = () => {
       <nav>
         <CustomLink href="/" title="Home" className='mr-4'/>
         <CustomLink href="/about" title="About me" className='mx-4'/>
-        <CustomLink href="/contact" title ="Contact" className='ml-4'/>
       </nav>     
       <nav className='flex items-center justify-center flex-wrap '>
         <motion.a href="https://github.com/Gazhrak/" target={"_blank"}        
