@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import Head from 'next/head';
-import Layout from '../components/Layout';
+import Layout from '@/components/Layout';
 import AnimatedText from '@/components/AnimatedText';
+import Experience from '@/components/Experience';
 import Image from 'next/image';
-import Skills from '../components/Skills';
+import Skills from '@/components/Skills';
 import ProfilePic from '../../public/images/profile/Foto Carnet.jpg';
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 
@@ -88,6 +89,7 @@ const About = () => {
                     </div>
                 </div>
                 <Skills/>
+                <Experience/>
                 </Layout>                
             </main>
         </div>
