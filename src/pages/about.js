@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import Head from 'next/head';
-import Layout from '@/components/Layout';
+import Layout from '../components/Layout';
 import AnimatedText from '@/components/AnimatedText';
 import Image from 'next/image';
+import Skills from '../components/Skills';
 import ProfilePic from '../../public/images/profile/Foto Carnet.jpg';
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 
@@ -13,7 +14,7 @@ const ref = useRef(null)
 
 const motionValue = useMotionValue(0);
 const springValue = useSpring(motionValue, {duration:3000 });
-const isInview = useInView({ref});
+const isInview = useInView(ref, {once:true});
 
 useEffect(() => {
     if(isInview){
@@ -23,7 +24,9 @@ useEffect(() => {
 
 useEffect(() => {
     springValue.on("change", (latest) => {
-        console.log(latest)
+        if(ref.current && latest.toFixed(0) <= value ){
+            ref.current.textContent = latest.toFixed(0)
+        }
     })
 },[springValue, value])
 
@@ -72,18 +75,19 @@ const About = () => {
                         </div>
                         <div className='flex flex-col items-end justify-center'>
                             <span className='inline-block text-7xl font-bold'>
-                                4+
+                                <AnimatedNumbers value={4}/>+
                             </span>
                             <h2 className='text-xl font-medium capitalize text-dark/75'>Years working with SQL databases</h2>
                         </div>
                         <div className='flex flex-col items-end justify-center'>
                             <span className='inline-block text-7xl font-bold'>
-                                10+
+                            <AnimatedNumbers value={10}/>+
                             </span>
                             <h2 className='text-xl font-medium capitalize text-dark/75'>Projects successfully delivered</h2>
                         </div>
                     </div>
                 </div>
+                <Skills/>
                 </Layout>                
             </main>
         </div>
