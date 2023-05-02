@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Layout from '@/components/Layout';
 import AnimatedText from '@/components/AnimatedText';
 import Experience from '@/components/Experience';
+import Education from '@/components/Education';
 import Image from 'next/image';
 import Skills from '@/components/Skills';
 import ProfilePic from '../../public/images/profile/Foto Carnet.jpg';
@@ -90,6 +91,7 @@ const About = () => {
                 </div>
                 <Skills/>
                 <Experience/>
+                <Education/>
                 </Layout>                
             </main>
         </div>
