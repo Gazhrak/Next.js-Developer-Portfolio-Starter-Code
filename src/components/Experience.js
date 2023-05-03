@@ -48,7 +48,7 @@ const Experience = () => {
 
                 <Details position="Fullstack Developer" company="Government of Navarra" time="March 2017-December 2018"
                 adress="Sarriguren, Navarra, Spain" work=".Net Fullstack developer, using C#, entity Framework, HTML5,
-                CSS and MSSQL to develop web applications for Navarra's public healthcare system. All develop using agile methodologies such as SCRUM and Kanban."/>
+                CSS and MSSQL to develop web applications for Navarra's public healthcare system. All developed using agile methodologies such as SCRUM and Kanban."/>
 
                 <Details position="Junior FullStack Developer" company="D2D" time="July 2014-March 2017"
                 adress="Mutilva, Navarra, Spain" work="Programming web applications with AngularJS, HTML, CSS, Java 8 with Spring and MySQL for multiple international customers. 

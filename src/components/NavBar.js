@@ -27,6 +27,7 @@ const NavBar = () => {
       <nav>
         <CustomLink href="/" title="Home" className='mr-4'/>
         <CustomLink href="/about" title="About me" className='mx-4'/>
+        
       </nav>     
       <nav className='flex items-center justify-center flex-wrap '>
         <motion.a href="https://github.com/Gazhrak/" target={"_blank"}        
@@ -44,14 +45,15 @@ const NavBar = () => {
           <LinkedInIcon />
         </motion.a>
 
-        <button 
-        onClick={()=> setMode(mode === 'light' ? 'dark' : "light")}>
+        {/* <button 
+        onClick={()=> setMode(mode === 'light' ? 'dark' : "light")}
+        className='flex ml-3 items-center justify-center p-1'>
           {
             mode === 'dark' ? 
             <SunIcon className={"fill-dark"}/> :
             <MoonIcon className={"fill-dark"}/>
           }
-        </button>
+        </button> */}
       </nav>
       <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
         <Logo/></div>
