@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import NavBar from '@/components/Navbar'
+import NavBar from '@/components/NavBar'
 import Image from 'next/image'
 import Layout from '@/components/Layout'
 import profilepic from '../../public/images/profile/imagen portfolio2.png'
